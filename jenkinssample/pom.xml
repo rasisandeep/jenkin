@@ -3,4 +3,31 @@
   <groupId>jenkins</groupId>
   <artifactId>jenkinssample</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <build>
+  <plugins>
+   <plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-compiler-plugin</artifactId>
+    <configuration>
+     <source>1.</source>
+     <target>1.</target>
+    </configuration>
+   </plugin>
+
+
+
+   
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-jar-plugin</artifactId>
+   <configuration>
+   <archive>
+     <manifest>
+       <mainClass>jenkinssample.Jensample</mainClass>
+     </manifest>
+     </archive>
+   </configuration>
+  </plugin>
+ </plugins>
+</build>
 </project>
